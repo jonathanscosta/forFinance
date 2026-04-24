@@ -1,0 +1,91 @@
+/* azul escuro principal rgb(10,25,65)
+azul escuro secundario gradiante rgb (15,35,65)
+dourado primario rgb(184,134,58)
+dourado secundário rgb(212,170,95)
+texto principal branco rgb(255,255,255)
+texto secundario cinza rgb(200,200,200)
+texto em fundo clario cinza escuro rgb(40,40,40) */
+
+
+:root{
+    --azulEscuro:rgb(10,25,65);
+    --azulEscuro2:rgb(15,35,65);
+    --dourado1:rgb(184,134,58);
+    --dourado2:rgb(212,170,95);
+    --textoBranco1:rgb(255,255,255);
+    --textoCinza2:rgb(200,200,200);
+    --textoFundoClaro:rgb(40,40,40);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+.wrapper{
+    max-width: 100%;
+    margin: 20px;
+    
+    
+}
+
+.cabecalho{
+    display: flex;
+}
+
+
+.logo{
+    flex: 3;
+    border-top-left-radius: 10px;
+    background: var(--azulEscuro);
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+   max-width: 100%;
+   height: auto;
+    
+    
+}
+
+.usuario{
+    flex: 7;
+    background: var(--textoCinza2);
+    border-top-right-radius: 10px;
+    
+    
+}
+
+.container{
+    display: flex;
+    height: 500px;
+
+
+    
+}
+
+.menuLateral{
+    flex: 3;
+    background: linear-gradient(1deg,var(--azulEscuro), var(--azulEscuro2));
+    color: var(--textoBranco1);
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    
+}
+
+.paginaPrincipal{
+    flex: 7;
+    background: linear-gradient(180deg,  var(--textoCinza2),var(--textoBranco1));
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    
+    
+}
+
