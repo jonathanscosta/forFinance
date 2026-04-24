@@ -13,7 +13,7 @@ texto em fundo clario cinza escuro rgb(40,40,40) */
     --dourado1:rgb(184,134,58);
     --dourado2:rgb(212,170,95);
     --textoBranco1:rgb(255,255,255);
-    --textoCinza2:rgb(200,200,200);
+    --textoCinza2:rgb(240,240,240);
     --textoFundoClaro:rgb(40,40,40);
 }
 
@@ -24,11 +24,11 @@ texto em fundo clario cinza escuro rgb(40,40,40) */
 body{
     margin: 0;
     background-color: black;
+    
 }
 .wrapper{
-    max-width: 100%;
-    margin: 20px;
-    
+    max-width: 80%;
+    margin: 50px auto;
     
 }
 
@@ -38,9 +38,10 @@ body{
 
 
 .logo{
-    flex: 3;
+    flex: 2;
     border-top-left-radius: 10px;
     background: var(--azulEscuro);
+    height: auto;
    
 
     display: flex;
@@ -56,7 +57,7 @@ body{
 }
 
 .usuario{
-    flex: 7;
+    flex: 8;
     background: var(--textoCinza2);
     border-top-right-radius: 10px;
     
@@ -72,7 +73,7 @@ body{
 }
 
 .menuLateral{
-    flex: 3;
+    flex: 2;
     background: linear-gradient(1deg,var(--azulEscuro), var(--azulEscuro2));
     color: var(--textoBranco1);
     border-bottom-left-radius: 10px;
@@ -81,11 +82,34 @@ body{
 }
 
 .paginaPrincipal{
-    flex: 7;
-    background: linear-gradient(180deg,  var(--textoCinza2),var(--textoBranco1));
+    flex: 8;
+    background: var(--textoBranco1);
     border-bottom-right-radius: 10px;
     text-align: center;
     
     
 }
 
+.menuLateral a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-size: large;
+    text-align: left;
+    color: var(--textoBranco1);
+    margin-left: 40px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.menuLateral a img{
+    width: 20px;
+    height: 20px;
+}
+
+.menuLateral a:hover{
+    color: var(--dourado1);
+    font-size: 1.1em;
+}
