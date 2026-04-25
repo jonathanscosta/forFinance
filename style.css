@@ -27,8 +27,8 @@ body{
     
 }
 .wrapper{
-    max-width: 80%;
-    margin: 50px auto;
+    max-width: 100%;
+    margin: 20px;
     
 }
 
@@ -56,17 +56,25 @@ body{
     
 }
 
-.usuario{
+.usuario {
     flex: 8;
     background: var(--textoCinza2);
     border-top-right-radius: 10px;
     
-    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+.usuario i {
+    margin-right: 20px;
+}
+
+
 
 .container{
     display: flex;
-    height: 500px;
+    
 
 
     
@@ -86,8 +94,19 @@ body{
     background: var(--textoBranco1);
     border-bottom-right-radius: 10px;
     text-align: center;
+
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 10px;
+}
+
+.card{
     
-    
+    border: 1px solid var(--dourado1);
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .menuLateral a{
