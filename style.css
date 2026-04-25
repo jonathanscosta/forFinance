@@ -90,23 +90,48 @@ body{
 }
 
 .paginaPrincipal{
+    position: relative;
+    z-index: 1;
     flex: 8;
     background: var(--textoBranco1);
     border-bottom-right-radius: 10px;
-    text-align: center;
+    text-align: left;
 
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
     gap: 10px;
+    min-height: 500px;
+    align-items: start;
+}
+
+.paginaPrincipal::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url(/imagens/grafico\ final.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .card{
-    
-    border: 1px solid var(--dourado1);
+    display: inline-flex;
+    border: 2px solid rgb(177, 173, 173);
     margin: 10px;
     border-radius: 10px;
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 100%;
+    padding: 10px;
+    justify-content: center;
+    background-color: var(--textoCinza2);
+
 }
 
 .menuLateral a{

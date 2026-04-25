@@ -8,6 +8,7 @@
     <title>ForFinance</title>
 </head>
 <body>
+    <script src="financeiro.js"></script>
 <div class="wrapper">
 <header>
     <div class="cabecalho">
@@ -28,16 +29,24 @@
         
         <div class="menuLateral">
             
-             <a href="ADM"><i class="fa-solid fa-users-gear"></i>Administrativo</a>
-                
+             <a href="home"><i class="fa-solid fa-house"></i>Home</a>
+             <a href="ADM"><i class="fa-solid fa-users-gear"></i>Administrativo</a>  
              <a href="finaceiro"><i class="fa-brands fa-cash-app"></i>Financeiro</a>
              <a href="Logistica"><i class="fa-solid fa-truck"></i>Logística</a>
              <a href="colaboradores"><i class="fa-solid fa-screwdriver-wrench"></i>Colaboradores</a>
         </div>
 
         <div class="paginaPrincipal">
-            <h2>Dashbord</h2>
-            <div class="card">card1</div>
+            
+            <div class="card">Total de vendas Mês 
+                <div>
+                    <input type="number" id="num1" placeholder="número 1">
+                    <input type="number" id="num2" placeholder="número 2">
+                    <button onclick="somar()">Somar</button>
+
+                    <p id="resultado">resultado: </p>
+                </div>
+            </div>
             <div class="card">card2</div>
             <div class="card">card3</div>
             <div class="card">card4</div>
